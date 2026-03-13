@@ -1,0 +1,155 @@
+.hero-section {
+  @include media(desktop) {
+  }
+}
+
+.hero-bg-wrapper {
+  padding-top: 395px;
+  padding-bottom: 24px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    padding-top: 190px;
+    padding-bottom: 128px;
+    max-width: 1440px;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+  }
+}
+
+.hero-container {
+  @include media(desktop) {
+  }
+}
+
+.hero-content-wrapper {
+  @include media(desktop) {
+    max-width: 522px;
+    margin-left: auto;
+  }
+}
+
+.hero-title-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.hero-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fdc;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 18px;
+    max-width: 522px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+  }
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffe22f;
+  border: 4px solid #ffbf00;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 100%;
+  max-width: 343px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background 0.3s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #ffbd2f;
+
+    .her-btn-top-text {
+    }
+
+    .her-btn-bottom-text {
+    }
+  }
+
+  @include media(desktop) {
+    max-width: 240px;
+  }
+}
+
+.hero-btn-text-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.her-btn-top-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #0f2034;
+  margin-bottom: 4px;
+  transition: color 0.3s ease-in-out;
+
+  @include media(desktop) {
+  }
+}
+
+.her-btn-bottom-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #0f2034;
+  transition: color 0.3s ease-in-out;
+
+  @include media(desktop) {
+  }
+}
+
+.hero-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include media(desktop) {
+    left: auto;
+    right: 0;
+    transform: none;
+  }
+}
