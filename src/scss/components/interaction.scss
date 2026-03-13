@@ -1,0 +1,101 @@
+.interaction-visual-bg-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/interaction/interaction-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    background-image: url(../img/interaction/interaction-bg-desk.jpg);
+  }
+}
+
+.interaction-section {
+  @include media(desktop) {
+  }
+}
+
+.interaction-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 104px;
+    padding-bottom: 104px;
+    max-width: 1440px;
+  }
+}
+
+.interaction-container {
+  @include media(desktop) {
+  }
+}
+
+.interaction-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.interaction-title {
+  @include media(desktop) {
+  }
+}
+
+.interaction-subtitle {
+  @include media(desktop) {
+    max-width: 624px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+  }
+}
+
+.interaction-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 32px;
+  }
+}
+
+.interaction-list-item {
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 343px;
+
+  @include media(desktop) {
+    max-width: 248px;
+  }
+}
+
+.interaction-icon {
+  @include media(desktop) {
+  }
+}
+
+.interaction-item-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}

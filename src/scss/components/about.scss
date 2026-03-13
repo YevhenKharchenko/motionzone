@@ -4,22 +4,16 @@
 }
 
 .about-bg-wrapper {
-  border-radius: 60px;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 64px;
+  max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/about/about-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
 
   @include media(desktop) {
-    border-radius: 100px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: #d19e5e;
-    background-image: url(../img/about/about-bg-desk.png);
+    padding-top: 120px;
+    padding-bottom: 104px;
+    max-width: 1440px;
   }
 }
 
@@ -33,81 +27,40 @@
   }
 }
 
+.about-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
 .about-title {
   @include media(desktop) {
   }
 }
 
-.about-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.4;
-  text-align: center;
-  color: #f2e8d4;
-  margin-bottom: 72px;
-
+.about-subtitle {
   @include media(desktop) {
-    font-size: 18px;
-    max-width: 348px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.about-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-
-  @include media(desktop) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: start;
     max-width: 842px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-.about-list-item {
-  box-shadow: 12px 12px 36px 0 rgba(66, 52, 52, 0.3);
-  border-radius: 36px;
-  padding: 36px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  width: 100%;
-  max-width: 256px;
-  min-height: 302px;
-  background-image: url(../img/about/about-item-bg.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-
-  @include media(desktop) {
-  }
-}
-
-.about-img {
-  @include media(desktop) {
-  }
-}
-
-.about-item-text {
+.about-text {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.4;
-  letter-spacing: 0.02em;
   text-align: center;
-  color: #0f2034;
-  max-width: 208px;
+  color: #c7c7c7;
 
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 16px;
+    max-width: 406px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

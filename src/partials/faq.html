@@ -2,85 +2,79 @@
   <div class="faq-bg-wrapper">
     <div class="container faq-container">
       <div class="faq-content-wrapper">
-        <h2 class="section-title faq-title">FAQ</h2>
-        <ul class="faq-list">
-          <li class="faq-list-item">
-            <button class="faq-top-text-btn">
-              <span class="faq-btn-text">Is Pocket Sort easy to learn?</span>
-              <span class="faq-toggle-symbol"
-                ><svg class="faq-icon" width="24" height="24">
-                  <use href="./img/sprite.svg#icon-plus"></use></svg
-              ></span>
-            </button>
-            <p class="faq-bottom-text">
-              Yes — controls and goals are intuitive, and there’s no timer
-              pressure.
-            </p>
-          </li>
-          <li class="faq-list-item">
-            <button class="faq-top-text-btn">
-              <span class="faq-btn-text"
-                >Does the game get more challenging?</span
-              >
-              <span class="faq-toggle-symbol"
-                ><svg class="faq-icon" width="24" height="24">
-                  <use href="./img/sprite.svg#icon-plus"></use></svg
-              ></span>
-            </button>
-            <p class="faq-bottom-text">
-              Yes — new coin types and board patterns appear as you progress.
-            </p>
-          </li>
-          <li class="faq-list-item">
-            <button class="faq-top-text-btn">
-              <span class="faq-btn-text">Are there boosters?</span>
-              <span class="faq-toggle-symbol"
-                ><svg class="faq-icon" width="24" height="24">
-                  <use href="./img/sprite.svg#icon-plus"></use></svg
-              ></span>
-            </button>
-            <p class="faq-bottom-text">
-              Yes — useful boosts help solve tougher boards.
-            </p>
-          </li>
-          <li class="faq-list-item">
-            <button class="faq-top-text-btn">
-              <span class="faq-btn-text">Can I play casually?</span>
-              <span class="faq-toggle-symbol"
-                ><svg class="faq-icon" width="24" height="24">
-                  <use href="./img/sprite.svg#icon-plus"></use></svg
-              ></span>
-            </button>
-            <p class="faq-bottom-text">
-              Definitely! No rushing around - just take it easy and think.
-            </p>
-          </li>
-          <li class="faq-list-item">
-            <button class="faq-top-text-btn">
-              <span class="faq-btn-text">Does it help train the brain?</span>
-              <span class="faq-toggle-symbol"
-                ><svg class="faq-icon" width="24" height="24">
-                  <use href="./img/sprite.svg#icon-plus"></use></svg
-              ></span>
-            </button>
-            <p class="faq-bottom-text">
-              Yeah, figuring out the patterns really helps sharpen your
-              thinking.
-            </p>
-          </li>
-          <li class="faq-list-item">
-            <button class="faq-top-text-btn">
-              <span class="faq-btn-text">Are there levels?</span>
-              <span class="faq-toggle-symbol"
-                ><svg class="faq-icon" width="24" height="24">
-                  <use href="./img/sprite.svg#icon-plus"></use></svg
-              ></span>
-            </button>
-            <p class="faq-bottom-text">
-              Yes — levels increase in difficulty and variety.
-            </p>
-          </li>
-        </ul>
+        <div class="faq-text-wrapper">
+          <h2 class="section-title faq-title">FAQ</h2>
+          <p class="section-subtitle faq-subtitle">
+            Everything you might wonder before stepping into the motion.
+          </p>
+          <ul class="faq-list">
+            <li class="faq-list-item">
+              <button class="faq-top-text-btn">
+                <span class="faq-btn-text">Is Driftform a rhythm game?</span>
+                <span class="faq-toggle-symbol"
+                  ><svg class="faq-icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-caret"></use></svg
+                ></span>
+              </button>
+              <p class="faq-bottom-text">
+                Yes, but rhythm is felt through motion, not beats.
+              </p>
+            </li>
+            <li class="faq-list-item">
+              <button class="faq-top-text-btn">
+                <span class="faq-btn-text">Are there levels or stages?</span>
+                <span class="faq-toggle-symbol"
+                  ><svg class="faq-icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-caret"></use></svg
+                ></span>
+              </button>
+              <p class="faq-bottom-text">
+                The levels aren't really levels - they just change and evolve as
+                you play.
+              </p>
+            </li>
+            <li class="faq-list-item">
+              <button class="faq-top-text-btn">
+                <span class="faq-btn-text">Is precision required?</span>
+                <span class="faq-toggle-symbol"
+                  ><svg class="faq-icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-caret"></use></svg
+                ></span>
+              </button>
+              <p class="faq-bottom-text">
+                No. Smooth control and awareness matter more.
+              </p>
+            </li>
+            <li class="faq-list-item">
+              <button class="faq-top-text-btn">
+                <span class="faq-btn-text">Can you fail a level?</span>
+                <span class="faq-toggle-symbol"
+                  ><svg class="faq-icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-caret"></use></svg
+                ></span>
+              </button>
+              <p class="faq-bottom-text">
+                There's no real failure state - if you screw up, the flow just
+                kinda breaks for a second and then you pick it back up.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <source
+            srcset="./img/faq/faq-img-desk.png"
+            media="(min-width: 1440px)"
+            width="467"
+            height="579" />
+          <source srcset="./img/faq/faq-img-mob.png" width="343" height="571" />
+          <img
+            class="faq-img"
+            src="./img/faq/faq-img-mob.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="571"
+            loading="lazy"
+        /></picture>
       </div>
     </div>
   </div>

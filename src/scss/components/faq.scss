@@ -4,22 +4,14 @@
 }
 
 .faq-bg-wrapper {
-  border-radius: 60px;
   padding-top: 64px;
   padding-bottom: 64px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/faq/faq-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
 
   @include media(desktop) {
-    border-radius: 100px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: #d19e5e;
-    background-image: url(../img/faq/faq-bg-desk.png);
+    padding-top: 104px;
+    padding-bottom: 104px;
   }
 }
 
@@ -29,49 +21,67 @@
 }
 
 .faq-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
   @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 64px;
+  }
+}
+
+.faq-text-wrapper {
+  background: #f33c74;
+  border-radius: 40px;
+  padding: 40px 16px;
+
+  @include media(desktop) {
+    padding: 40px;
+    max-width: 749px;
   }
 }
 
 .faq-title {
-  margin-bottom: 48px;
+  @include media(desktop) {
+  }
+}
+
+.faq-subtitle {
+  margin-bottom: 40px;
 
   @include media(desktop) {
-    margin-bottom: 72px;
   }
 }
 
 .faq-list {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 16px;
 
   @include media(desktop) {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: start;
-    gap: 16px 32px;
-    max-width: max-content;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 .faq-list-item {
-  box-shadow: 8px 8px 16px 0 rgba(118, 104, 104, 0.16);
   background: #fff;
   border-radius: 16px;
-  padding: 16px;
+  padding: 20px 16px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   width: 100%;
-  max-width: 343px;
+  max-width: 311px;
   margin-left: auto;
   margin-right: auto;
   transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
-    max-width: 506px;
+    max-width: 669px;
   }
 }
 
@@ -86,11 +96,10 @@
 
 .faq-btn-text {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 1.4;
-  letter-spacing: 0.02em;
-  color: #0f2034;
+  color: #ff3503;
   text-align: left;
 
   @include media(desktop) {
@@ -119,18 +128,18 @@
 .faq-bottom-text {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.4;
-  color: #0f2034;
-  max-width: 287px;
+  color: #11091c;
+  max-width: 255px;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   opacity: 0;
 
   @include media(desktop) {
-    font-size: 18px;
-    max-width: 450px;
+    font-size: 16px;
+    max-width: 613px;
   }
 }
 
@@ -151,4 +160,13 @@
 }
 
 .faq-list-item.faq-open .faq-btn-text {
+}
+
+.faq-img {
+  box-shadow: 0 4px 32px 0 rgba(243, 60, 116, 0.6);
+  border-radius: 40px;
+
+  @include media(desktop) {
+    min-width: 467px;
+  }
 }

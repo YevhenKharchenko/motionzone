@@ -5,14 +5,18 @@
 
 .contact-bg-wrapper {
   padding-top: 64px;
-  padding-bottom: 80px;
+  padding-bottom: 64px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  background-image: url(../img/contact/contact-bg-desk.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 
   @include media(desktop) {
-    padding-top: 80px;
-    padding-bottom: 120px;
+    padding-top: 104px;
+    padding-bottom: 104px;
     max-width: 1440px;
   }
 }
@@ -24,71 +28,55 @@
 
 .contact-content-wrapper {
   @include media(desktop) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 72px;
   }
 }
 
 .contact-img {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 
   @include media(desktop) {
-    margin: 0;
   }
 }
 
 .contact-text-wrapper {
-  max-width: 305px;
-  margin-left: 19px;
-
   @include media(desktop) {
-    margin: 0;
   }
 }
 
 .contact-title {
-  text-align: left;
-
   @include media(desktop) {
   }
 }
 
-.contact-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.4;
-  color: #fdc;
-  margin-bottom: 32px;
-
+.contact-subtitle {
   @include media(desktop) {
-    font-size: 18px;
   }
 }
 
 .contact-link {
-  background: #ff653a;
-  border-radius: 12px;
-  padding: 8px 16px;
+  background: #f33c74;
+  border-radius: 16px;
+  padding: 8px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.4;
-  letter-spacing: 0.02em;
-  color: #fff;
+  text-align: center;
+  color: #f2f2f2;
   word-break: break-all;
-  max-width: max-content;
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 36px;
+    max-width: max-content;
   }
 }
 
