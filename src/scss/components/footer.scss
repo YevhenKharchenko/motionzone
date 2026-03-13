@@ -1,5 +1,5 @@
 .footer {
-  background: #da7423;
+  background: #11091c;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -36,10 +36,9 @@
 
 .footer-link {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.4;
-  letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
   transition: color 0.3s ease-in-out;
@@ -56,12 +55,12 @@
 .footer-text {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.4;
   text-align: center;
   color: #fff;
 
   @include media(desktop) {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
